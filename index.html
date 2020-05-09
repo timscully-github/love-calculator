@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <title>Love Calculator</title>
   </head>
@@ -17,14 +18,23 @@
       <p>To find out what the chances for you and your dream partner are, just fill in both full names (both first and last name) in the two text boxes below, and press Calculate.</p>
       <form onsubmit="return false">
         <div class="form-group">
-          <label>Type your details below</label>
-          <input type="text" name="weight" class="form-control" id="yourName" aria-describedby="yourName" placeholder="Your name?"><br>
-          <input type="text" name="lover" class="form-control" id="height" aria-describedby="lover" placeholder="Your lovers' name?"><br>
-          <button type="submit" id="submitBtn" class="btn btn-lg mb-2" >Submit</button>
-          <small class="form-text text-muted">We'll never share your crush with anyone else</small>
+          <label class="secondary-text-color">Type your names below</label>
+          <div class="row mx-auto">
+            <div class="col-md-5 mx-auto mb-2">
+              <input type="text" name="yourNAme" class="form-control" id="yourName" aria-describedby="yourName" placeholder="Your name?">
+            </div>
+            <div class="col-md-5 mx-auto mb-2">
+              <input type="text" name="lover" class="form-control" id="height" aria-describedby="lover" placeholder="Your lovers' name?">
+            </div>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-lg mb-2" >Calculate <i class="fas fa-grin-hearts pl-1"></i></button>
+          <small class="form-text text-muted">We'll never share your love interests with anyone else</small>
         </div>
       </form>
-      <h4 id="result"></h4>
+      <div class="result-container">
+        <img class="heart-image" src="images/heart.png" alt="">
+        <h4 id="result-text"></h4>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

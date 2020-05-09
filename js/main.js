@@ -1,14 +1,11 @@
-var weight = document.getElementById("weight");
-var height = document.getElementById("height");
 var submitBtn = document.getElementById("submitBtn");
 submitBtn.onclick = function(){
-  weight = weight.value;
-  height = height.value;
-  bmiCalculator(weight, height);
+  loveCalculator();
   submitBtn.setAttribute("disabled", true);
 }
 
-function bmiCalculator(weight, height) {
-    var bmi = Math.floor(weight / Math.pow(height, 2));
-    document.getElementById("result").innerHTML = "Your current BMI is " + bmi;
+function loveCalculator(weight, height) {
+    var n = Math.random();
+    var love = Math.floor(n * 100);
+    document.getElementById("result-text").innerHTML = "Your love compatibility is " + love + "%";
 }

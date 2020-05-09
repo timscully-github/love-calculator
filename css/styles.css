@@ -1,5 +1,5 @@
 body {
-  background-color: #58b4ae;
+  background-color: #252a34;
   text-align: center;
   color: #fff;
 }
@@ -9,20 +9,44 @@ body {
 }
 
 h1 {
-  color: #ffe277;
+  color: #ff2e63;
 }
 
-.secondary-color {
-  background-color: #95389e;
+.secondary-text-color {
+  color: #ff2e63;
+}
+
+.result-container {
+  position: relative;
+}
+
+.heart-image {
+  position: absolute;
+  width: 75%;
+  left: 12%;
+  /* top: -40%; */
+}
+
+h4 {
+  padding-top: 150px;
 }
 
 form {
-  margin: 75px 0 ;
+  margin: 50px 0 0;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input:-ms-input-placeholder {
+  text-align: center;
 }
 
 .btn {
-  background-color: #ffb367;
+  background-color: #ff2e63;
   color: #fff;
+  margin: 20px;
 }
 
 .btn:hover {

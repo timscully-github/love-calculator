@@ -6,6 +6,6 @@ submitBtn.onclick = function(){
 
 function loveCalculator(weight, height) {
     var n = Math.random();
-    var love = Math.floor(n * 100);
+    var love = Math.floor(n * 100) + 1;
     document.getElementById("result-text").innerHTML = "Your love compatibility is " + love + "%";
 }

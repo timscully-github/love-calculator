@@ -1,0 +1,42 @@
+body {
+  background-color: #58b4ae;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  padding: 5% 10% 0;
+}
+
+h1 {
+  color: #ffe277;
+}
+
+.secondary-color {
+  background-color: #95389e;
+}
+
+form {
+  margin: 75px 0 ;
+}
+
+.btn {
+  background-color: #ffb367;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #9f9f9f;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

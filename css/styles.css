@@ -21,14 +21,12 @@ h1 {
 }
 
 .heart-image {
-  position: absolute;
-  width: 75%;
-  left: 12%;
-  /* top: -40%; */
+  position: relative;
+  width: 400px;
 }
 
-h4 {
-  padding-top: 150px;
+h5 {
+  margin: -250px auto 0;
 }
 
 form {
